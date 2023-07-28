@@ -5,9 +5,9 @@ import streamlit.components.v1 as components
 from PIL import Image
 import text2emotion as te
 import plotly.graph_objects as go
-def plotPie(labels, values):
+def plotBar(labels, values):
     fig = go.Figure(
-        go.Pie(
+        go.Bar(
         labels = labels,
         values = values,
         hoverinfo = "label+percent",
@@ -29,7 +29,7 @@ def getSentiments(userText):
     col4.metric("Fear 😨", emotion1['Fear'], None)
     col5.metric("Surprise 😲", emotion1['Surprise'], None)
     print(emotion1)
-    plotPie(list(emotion1.keys()), list(emotion1.values()))  
+    plotBar(list(emotion1.keys()), list(emotion1.values()))  
      
        
 def displayPage():
