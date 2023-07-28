@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 def plotBar(labels, values):
     fig = go.Figure(
         go.Bar(
-        labels = labels,
-        values = values
+        x= labels,
+        y= values
     ))
     st.plotly_chart(fig)
 
