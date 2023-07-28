@@ -9,9 +9,7 @@ def plotBar(labels, values):
     fig = go.Figure(
         go.Bar(
         labels = labels,
-        values = values,
-        hoverinfo = "label+percent",
-        textinfo = "value"
+        values = values
     ))
     st.plotly_chart(fig)
 
