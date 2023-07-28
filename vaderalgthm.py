@@ -18,11 +18,11 @@ def displayPage():
 def getSentiments(userText):
   compoundscore1,vadermaxscore1,status1=getVaderscore(userText)
   if(status1=="Positive"):
-    image1 = Image.open('images/positive.PNG')
+    image1 = Image.open('images/positive.png')
   elif(status1 == "Negative"):
-    image1 = Image.open('images/negative.PNG')
+    image1 = Image.open('images/negative.png')
   else:
-    image1 = Image.open('images/neutral.PNG')
+    image1 = Image.open('images/neutral.png')
   col1, col2, col3= st.columns(3)
   col1.metric("Compound Score",compoundscore1, None)
   col2.metric("VaderMaximum(Positive/Negative) Score",vadermaxscore1 , None)
