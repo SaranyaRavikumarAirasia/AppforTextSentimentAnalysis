@@ -24,15 +24,10 @@ def getSentiment(userText):
   col4.metric("Fear",emotion1['Fear'],None)
   col5.metric("Surprise",emotion1['Surprise'],None)
   print(emotion1)
-  plotBar(list(emotion1.keys()), list(emotion1.values()))  
-     
-def plotBar(labels, values):
-    fig = go.Figure(
-        go.Bar(
-        x= labels,
-        y= values
-    ))
-    st.plotly_chart(fig)
+  plotBar(list(emotion1.keys()),list(emotion1.values()))
 
+def plotBar(labels,values):
+  f=go.figure(go.Bar(x=labels,y=values))
+  st.plotly_chart(f)
           
 
