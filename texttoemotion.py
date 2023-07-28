@@ -25,8 +25,8 @@ def getSentiment(userText):
   print(emotion1)
 
 def plotBar(labels,values):
-  f=go.figure(
-    go.bar(labels=labels,values=values,textinfo="value"
+  f=go.Figure(
+    go.Bar(labels=labels,values=values,textinfo="value"
           ))
   st.plotly_chart(f)
   
