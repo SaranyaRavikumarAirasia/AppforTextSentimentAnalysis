@@ -19,11 +19,11 @@ def displayPage():
 def getSentiment(userText):
   polarity,subj,status=getPolarity(userText)
   if(status=="Positive"):
-    image=Image.open('./images/positive.png')
+    image=Image.open('images/positive.png')
   elif(status=="Negative"):
-    image=Image.open('./images/negative.png')
+    image=Image.open('images/negative.png')
   else:
-    image=Image.open('./images/neutral.png')
+    image=Image.open('images/neutral.png')
 
 def getPolarity(userText):
   tb=TextBlob(userText)
