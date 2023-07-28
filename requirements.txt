@@ -3,3 +3,6 @@ textblob
 streamlit-option-menu
 Pillow
 streamlit_extra_components
+text2emotion
+plotly
+
