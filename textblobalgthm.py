@@ -1,6 +1,6 @@
 from textblob import TextBlob
 import streamlit as st
-import stremlit.components.v1 as components
+import streamlit.components.v1 as components
 from PIP import Image
 
 #Create user defined function
