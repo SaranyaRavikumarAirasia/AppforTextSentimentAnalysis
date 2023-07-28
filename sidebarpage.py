@@ -10,5 +10,5 @@ def show():
       selectedoption=option_menu(
         menu_title = "👇Select the type of Machine Learning for Text Sentiment Analysis",
         options = ["TextBlob Analysis", "Text2Emotion Analysis","VADER Sentiment Analysis"], #required
-        default_index=0,)
+        default_index=0)
       return selectedoption
