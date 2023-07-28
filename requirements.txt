@@ -6,5 +6,6 @@ Pillow
 streamlit_extra_components
 plotly
 nltk
+emoji
 
 
