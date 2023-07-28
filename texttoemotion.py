@@ -12,7 +12,7 @@ def plotBar(labels,values):
         hoverinfo = "label+percent",
         textinfo = "value"
     ))
-    st.plotly_chart(fig)
+  st.plotly_chart(fig)
 
 def displayPage():
   st.subheader("Text analysis using Text2Emotion Algorithm")
