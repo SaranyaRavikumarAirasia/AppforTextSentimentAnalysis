@@ -1,7 +1,7 @@
 import streamlit as st
 import sidebarpage
 import textblobalgthm
-import  texttoemotion
+import texttoemotion
 page=sidebarpage.show()
 if(page=="TextBlob Analysis"):
   textblobalgthm.displayPage()
