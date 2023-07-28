@@ -2,8 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
 import text2emotion as te
-import plotly.graph_object as go
-
+import plotly.graph_objects as go
 def displayPage():
   st.subheader("Text analysis using Text2Emotion Algorithm")
   st.text("Enter the text to be analyzed")
