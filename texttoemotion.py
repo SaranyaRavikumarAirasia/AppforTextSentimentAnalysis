@@ -3,6 +3,17 @@ import streamlit.components.v1 as components
 from PIL import Image
 import text2emotion as te
 import plotly.graph_objects as go
+
+def plotBar(labels,values):
+  f = go.Figure(
+        go.Bar(
+        labels = labels,
+        values = values,
+        hoverinfo = "label+percent",
+        textinfo = "value"
+    ))
+    st.plotly_chart(fig)
+
 def displayPage():
   st.subheader("Text analysis using Text2Emotion Algorithm")
   st.text("Enter the text to be analyzed")
@@ -24,13 +35,4 @@ def getSentiment(userText):
   print(emotion1)
   plotBar(list(emotion1.keys(),list(emotion1.values()))
           
-def plotBar(labels,values):
-  f = go.Figure(
-        go.Bar(
-        labels = labels,
-        values = values,
-        hoverinfo = "label+percent",
-        textinfo = "value"
-    ))
-    st.plotly_chart(fig)
 
